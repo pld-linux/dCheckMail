@@ -11,7 +11,13 @@ Source0:	%{name}-%{version}.tar.bz2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-dCheckMail scans through given mail-folder files and dirs, and prints nice summary about unread messages.
+dCheckMail scans through given mail-folder files and dirs, and prints
+nice summary about unread messages.
+
+%description -l pl
+dCheckMail przeszukuje podane pliki oraz katalogi ze skrzynkami
+pocztowymi i wy¶wietla podsumowanie dotycz±ce nieprzeczytanych
+wiadomo¶ci.
 
 %prep
 %setup  -q
@@ -30,7 +36,7 @@ install -d $RPM_BUILD_ROOT/etc/ds
 install etc/%{name}.ini $RPM_BUILD_ROOT/etc/ds
 
 %clean
-#rm -rf $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
