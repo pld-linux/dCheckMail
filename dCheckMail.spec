@@ -7,6 +7,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Mail
 Source0:	%{name}-%{version}.tar.bz2
+# Source0-md5:	383689aa86c8484ea14491265770cf40
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
