@@ -7,7 +7,7 @@ Version:	1.0
 Release:	1
 License:	GPL
 Group:		Applications/Mail
-Source0:	SOURCES/%{name}-%{version}.tar.bz2
+Source0:	%{name}-%{version}.tar.bz2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
