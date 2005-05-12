@@ -9,6 +9,7 @@ Group:		Applications/Mail
 Source0:	%{name}-%{version}.tar.bz2
 # Source0-md5:	383689aa86c8484ea14491265770cf40
 BuildRequires:	rpm-perlprov >= 4.1-13
+Requires:	perl-Config-IniFiles
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,13 +31,11 @@ wiadomo¶ci.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
+install -d $RPM_BUILD_ROOT%{_sysconfdir}/ds
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT/etc
-install -d $RPM_BUILD_ROOT/etc/ds
-install etc/%{name}.ini $RPM_BUILD_ROOT/etc/ds
+install etc/%{name}.ini $RPM_BUILD_ROOT%{_sysconfdir}/ds
 
 %clean
 rm -rf $RPM_BUILD_ROOT
