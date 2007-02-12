@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	dCheckMail - mbox mail folder checker
-Summary(pl):	dCheckMail - sprawdzacz folderÛw pocztowych mbox
+Summary(pl.UTF-8):   dCheckMail - sprawdzacz folder√≥w pocztowych mbox
 Name:		dCheckMail
 Version:	1.0
 Release:	2
@@ -16,10 +16,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 dCheckMail scans through given mail-folder files and dirs, and prints
 nice summary about unread messages.
 
-%description -l pl
+%description -l pl.UTF-8
 dCheckMail przeszukuje podane pliki oraz katalogi ze skrzynkami
-pocztowymi i wy∂wietla podsumowanie dotycz±ce nieprzeczytanych
-wiadomo∂ci.
+pocztowymi i wy≈õwietla podsumowanie dotyczƒÖce nieprzeczytanych
+wiadomo≈õci.
 
 %prep
 %setup  -q
