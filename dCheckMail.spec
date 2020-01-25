@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	dCheckMail - mbox mail folder checker
 Summary(pl.UTF-8):	dCheckMail - sprawdzacz folderów pocztowych mbox
 Name:		dCheckMail
